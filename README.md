@@ -2,7 +2,7 @@ pyexec README
 =============
 
 This is a small application to paste/type a python snippet and execute it.
-Useful for ad-hoc testing of smaller code frgments without much setup. Just
+Useful for ad-hoc testing of smaller code fragments without much setup. Just
 paste and run.
 
 Usage
@@ -15,9 +15,9 @@ Usage
 Requirements
 ------------
 
-*   Linux       (tested on Ubuntu)
-*   Python 3    (it's a python script)
-*   PySide      (it uses Qt for UI)
+*   Linux       -- tested on Ubuntu 12.04
+*   Python 3    -- it's a python 3 script
+*   PySide      -- tested with 1.1.0, package python3-pyside in Ubuntu
 
 Features
 --------
