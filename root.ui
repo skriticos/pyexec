@@ -144,6 +144,12 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>txt_input</tabstop>
+  <tabstop>btn_run</tabstop>
+  <tabstop>txt_output</tabstop>
+  <tabstop>txt_exit_code</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
