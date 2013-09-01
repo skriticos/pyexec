@@ -86,6 +86,28 @@ uifile.close()
 root_window.btn_run.clicked.connect(run)
 
 root_window.show()
+
+# if we start with ./pyexec.py -xclip, the input box should be filled with the
+# current X11 clipboard and run
+if sys.argv[1] == '-xclip':
+
+    proc = subprocess.Popen(['/usr/bin/xsel', '--clipboard'],
+                         shell = False, stdout = subprocess.PIPE)
+
+    while proc.poll() is None:
+
+        lines = proc.stdout.readlines()
+        proc.stdout.flush()
+        if lines:
+            for line in lines:
+                txt = line.decode('utf-8')
+                if txt[-1] == '\n':
+                    txt = txt[:-1]
+                root_window.txt_input.appendPlainText(txt)
+
+    proc.wait()
+    run()
+
 sys.exit(app.exec_())
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
