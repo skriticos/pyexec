@@ -11,6 +11,11 @@ paste and run.
 2.  run application with the run control (or Alt-r)
 3.  see result in the output box
 
+#### X11 Clipboard Fetch Startup
+
+1.  run ./pyexec.py -xclip
+2.  see X11 clipboard content in input and result in output
+
 ### Requirements
 
 *   Linux       -- tested on Ubuntu 12.04
