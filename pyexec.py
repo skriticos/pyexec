@@ -107,6 +107,7 @@ if sys.argv[1] == '-xclip':
 
     proc.wait()
     run()
+    root_window.showMaximized()
 
 sys.exit(app.exec_())
 
