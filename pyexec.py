@@ -83,6 +83,9 @@ uifile.open(QFile.ReadOnly)
 root_window = loader.load(uifile)
 uifile.close()
 
+shortcut = QShortcut('Ctrl+w', root_window)
+shortcut.activated.connect(root_window.close)
+
 root_window.btn_run.clicked.connect(run)
 
 root_window.show()
