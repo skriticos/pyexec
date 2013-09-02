@@ -21,6 +21,7 @@ paste and run.
 *   Linux       -- tested on Ubuntu 12.04
 *   Python 3    -- it's a python 3 script
 *   PySide      -- tested with 1.1.0, package python3-pyside in Ubuntu
+*   xsel        -- for using X11 clipboard functionality
 
 ### Features
 
