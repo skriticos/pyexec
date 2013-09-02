@@ -112,6 +112,13 @@ if sys.argv[1] == '-xclip':
     run()
     root_window.showMaximized()
 
+    p = root_window.w_input.sizePolicy()
+    p.setVerticalStretch(0)
+    root_window.w_input.setSizePolicy(p)
+    p = root_window.w_output.sizePolicy()
+    p.setVerticalStretch(2)
+    root_window.w_output.setSizePolicy(p)
+
 sys.exit(app.exec_())
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
