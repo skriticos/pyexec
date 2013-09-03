@@ -5,6 +5,8 @@ This is a small application to paste/type a python snippet and execute it.
 Useful for ad-hoc testing of smaller code fragments without much setup. Just
 paste and run.
 
+![alt tag](https://raw.github.com/skriticos/pyexec/master/pyexec.png)
+
 ### Usage
 
 1.  paste or type python snipet in input box
